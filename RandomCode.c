@@ -3,26 +3,25 @@
 
 int multiplyBy8(int v)
 {
-	// TODO: multiply the number by 8
-	return v;
+	return v*8;
 }
 
 int setBit6to1(int v)
 {
-	// TODO: set bit 6 to 1
-	return v;
+  //set bit 6 to 1
+	return v | 0x40;
 }
 
 int setBit3to0(int v)
 {
 	// TODO: set bit 3 to 0
-	return v;
+	return v & 0xFB;
 }
 	
 int flipBit5(int v)
 {
 	// TODO: flip bit 5 (if it is 0, make it 1.  If 0, make 1)
-	return v;
+	return v ^ 0x20;
 }
 	
 int ifBit7is0(int v)
@@ -34,7 +33,10 @@ int ifBit7is0(int v)
 int ifBit3is1(int v)
 {
 	// check to see if bit 3 is a 1 - return 1 if true, 0 if false
-	return v;
+  if (v & 0x08) {
+    return 1;
+  }
+  else {return 0;}
 }
 
 int unsignedBits0through5(int v)
