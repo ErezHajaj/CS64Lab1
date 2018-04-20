@@ -68,7 +68,3 @@ int setBits4through9(int v, int setValue)
 	// set bits 4 through 9 in v to become setValue
 	return v;
 }
-
-
-
-
