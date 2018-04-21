@@ -20,26 +20,26 @@ after the prompt, and only on that line.  For example:
 1.) To display an integer to the screen, what value do you place into `$v0`?
     Express the answer in base 10.
 1.answer)
-
+1
 
 2.) What is the value in `$a0` when `syscall` is called the sixth time within
     `main`?  Express the answer as a hexadecimal number with 8 digits.
 2.answer)
-
+0x10010022
 
 3.) To display a string to the screen, what value do you place into `$v0`?
     Express the answer in base 10.
 3.answer)
-
+4
 
 4.) To read an integer from the user, what value do you place into `$v0`?
     Express the answer in base 10.
 4.answer)
-
+5
 5.) In what register does the simulator's system call place the 
     integer that the user entered?  Give the register name (i.e. `$s0`).
 5.answer)
-
+$v0
 
 6.) What variable is located at memory location `0x10010022?` 
     The answer is one of: welcome, prompt, sumText, or MyArray.
@@ -51,7 +51,7 @@ after the prompt, and only on that line.  For example:
      is known as "little-endian byte order", which is a topic we'll be
      looking at later in the class.)
 6.answer)
-
+prompt
 7.) There are times (i.e. the `la` pseudoinstruction) when it is 
     necessary to place a 32-bit constant into a register.  Unfortunately,
     `addi` only allows a 16-bit constant.  Therefore, this action requires
@@ -64,7 +64,7 @@ after the prompt, and only on that line.  For example:
     all constants should be expressed in hexadecimal with a leading `0x`.  For
     example: addi $t0, $t0, 0x42 ; sub $s5, $s6, $s7
 7.answer)
-
+lui $t0, 0x2b7a; ori $t0, $t0, 0x9454
 
 
 ---Signed Arithmetic---
@@ -92,5 +92,5 @@ after the prompt, and only on that line.  For example:
      That is, the compiler does not exploit the undefined behavior of overflow
      here.)
 8.answer)
-
+0x800000000
 

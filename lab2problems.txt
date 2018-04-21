@@ -324,17 +324,17 @@ the hexadecimal mask 0x0020.)
 42.) Specify the mask you would need to inspect bit 5 of the unknown number.
      Express it as a 4-digit hexadecimal number.
 42.answer)
-0x0040
+0x0020
 
 43.) Specify the mask you would need to set bit 5 of the unknown number to zero.
      That is, the result of this operation results in a new number, which the unknown
      number should be subsequently set to.  Express it as a 4-digit hexadecimal number.
 43.answer)
-&0xFFBF
+&0xFFDF
 
 44.) Specify the mask you would need to set bit 5 of the unknown number to one.
      That is, the result of this operation results in a new number, which the unknown
      number should be subsequently set to.  Express it as a 4-digit hexadecimal number.
 44.answer)
-|0x0040
+|0x0020
 

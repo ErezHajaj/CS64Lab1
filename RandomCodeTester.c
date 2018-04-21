@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "RandomCode.h"
+//#include "RandomCode.c"
 
 /* To make:
  * $ gcc RandomCodeTester.c RandomCode.c -o random_tester
@@ -21,9 +22,9 @@ struct func {
 };
 
 struct func FUNCS[NUM_FUNCS] = {
-      { printOriginalValue, "printOriginalValue" }
-    , { multiplyBy8, "multiplyBy8" }
-    , { setBit6to1, "setBit6to1" }
+  { printOriginalValue, "printOriginalValue" }
+  , { multiplyBy8 , "multiplyBy8" }
+  , { setBit6to1 , "setBit6to1" }
     , { setBit3to0, "setBit3to0" }
     , { flipBit5, "flipBit5" }
     , { ifBit7is0, "ifBit7is0" }
@@ -55,11 +56,7 @@ int TESTS[NUM_TEST_CASES][NUM_FUNCS] = {
     , { -2004, -16032, -1940, -2012, -2036, 1, 1, 44, 0, -20, 0, -1924 }
 };
 
-int
-main(
-    int argc,
-    char *argv[])
-{
+ int main(int argc, char* argv[]) {
     int i, j, rv;
     int passed_all = 1;
 
